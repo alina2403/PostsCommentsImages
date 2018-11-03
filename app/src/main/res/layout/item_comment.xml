@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:paddingLeft="10dp"
+    android:paddingRight="25dp"
+    android:paddingTop="10dp">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@2dp"
+        android:background="@color/darkGreen" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignBottom="@+id/messageLayout"
+        android:contentDescription="@string/app_name"
+        tools:src="@drawable/ic_feedback" />
+
+    <LinearLayout
+        android:id="@+id/messageLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/imageView"
+        android:layout_toRightOf="@+id/imageView"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/nameView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="3dp"
+            android:textStyle=""
+            tools:text="title" />
+
+        <TextView
+            android:id="@+id/emailView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="3dp"
+            tools:text="title" />
+
+        <TextView
+            android:id="@+id/bodyView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_bg_incoming_bubble"
+            android:padding="5dp"
+            tools:text="description" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>
